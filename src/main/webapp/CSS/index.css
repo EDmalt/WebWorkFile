@@ -1,0 +1,224 @@
+/*通用设置*/
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+/*
+    div样式设置
+*/
+
+#father_div{
+    width: 100%;
+    height: 100%;
+}
+#left_div{
+    width: 25%;
+    height: 100%;
+    float: left;
+    
+}
+#main_div{
+    width: 50%;
+    height: 1000px;
+    border: 1px rgba(64, 62, 62, 0.44) solid;
+    float: left;
+    margin-left: -2px;
+}
+#head_div{
+    width: 50%;
+    height: 20%;
+    margin-top: -1px;
+    position:fixed;
+    /*
+        背景虚化核心代码
+    */
+    background-color: rgb(255,255,255,0.85);
+    backdrop-filter: blur(12px);
+}
+#right_div{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+/*
+    搜索框样式
+*/
+#Search_div{
+    margin-top: 2%;
+    width: 90%;
+    height: 30%;
+    margin-left: 5%;
+    border-radius: 20px;
+    background-color: rgb(255,255,255,1);
+    box-shadow: 0px 2px 3px rgba(77, 76, 76, 0.496);
+}
+#Search_div:hover{
+    box-shadow:0px 2px 3px rgba(21, 21, 21, 0.974);
+}
+#history_div{
+    margin-top: 6%;
+    border: 1px black solid;
+    position:absolute;
+    display: block;
+    width: 90%;
+}
+#text_search{
+    width: 80%;
+    height: 100%;
+    margin-left: 3%;
+    border: 0px;
+    outline: medium;
+    font-size: 20px;
+    float: left;
+}
+/*搜索按钮*/
+#search_button{
+    margin-top:2px;
+    margin-right: 2%;
+    transform: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: right;
+    background-image: url("../images/seach.svg");
+    background-size: 100%;
+    border: 0px;
+}
+
+/*
+    顶部超链接样式
+*/
+#head_link_div{
+    width: 100%;
+    height: 25%;
+    margin-top: 6.8%;
+}
+#head_link_div a{
+    text-align: center;
+    display: block;
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+/*鼠标移上去时的样式*/
+#head_link_div a:hover{
+    font-weight: bold;
+    background-color: rgba(169, 165, 165, 0.516);
+}
+/*鼠标移点击时的样式*/
+#head_link_div a:active{
+    background-color: rgba(182, 160, 160, 0.307);
+}
+
+/*登录界面样式设置*/
+#login_div{
+    position: fixed;
+    padding: 1%;
+    width: 300px;
+    margin: 1%;
+    border: 1px rgba(101, 101, 101, 0.105) solid;
+    border-radius: 12px;
+    box-shadow: 0px 2px 3px rgba(77, 76, 76, 0.496);
+}
+#login_div:hover{
+    box-shadow:0px 2px 3px rgba(21, 21, 21, 0.974);
+}
+#login_div h2{
+    display: block;
+    margin-bottom: 5%;
+    width: 100%;
+}
+/*头像*/
+#login_div img{
+    display: block;
+    float: left;
+    margin-left: 5%;
+}
+/*登录表单排版*/
+#login_div ul{
+    list-style: none;
+    float: left;
+    margin-left: 2%;
+    margin-top: -5%;
+}
+#login_div li{
+    width: 90%;
+    height: 30px;
+    border: 1px rgba(62, 62, 62, 0.584) solid;
+    border-radius: 20px;
+    margin: 5%;
+    padding: 2% 5%;
+}
+#login_div li:nth-child(-n+2):hover{
+    background-color: rgba(176, 219, 255, 0.352);
+}
+#login_div li:nth-child(n+3):hover{
+    background-color: rgba(47, 48, 49, 0.327);
+}
+.login_text{
+    width: 90%;
+    height: 30px;
+    font-size:15px;
+    border: 0px;
+    outline: medium;
+    background-color: rgba(162, 197, 211, 0);
+}
+.login_button{
+    margin-top:2px;
+    margin-right: 2%;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color: rgba(162, 197, 211, 0);;
+    font-size: 15px;
+}
+
+/*注册页面*/
+#regit_div{
+    width: 0%;
+    height: 0px;
+    position: fixed;
+    margin-left: 24.5%;
+    top: -50%;
+    background-color: white;
+    border-radius: 12px;
+    border: 5px black double;
+    box-shadow: 0px 2px 3px rgba(77, 76, 76, 0.496);
+}
+#regit_div h2{
+    margin: 5% 40.5%;
+    width: 50%;
+}
+#regit_div ul{
+    margin-top: 5%;
+}
+#regit_div li{
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+}
+.regit_text{
+    width: 50%;
+    height: 50px;
+    font-size:15px;
+    border: 1px black solid;
+    outline: medium;
+    background-color: rgba(162, 197, 211, 0);
+    border-radius: 15px;
+    padding-left: 5%;
+}
+#regit_sub{
+    width: 10%;
+    height: 10%;
+    border: 1px black solid;
+    border-radius: 15px;
+    background-color: rgba(162, 197, 211, 0);;
+    font-size: 15px;
+}

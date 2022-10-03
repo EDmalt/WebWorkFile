@@ -1,0 +1,214 @@
+/*通用设置*/
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+}
+hr{
+    margin: 10px 0px;
+}
+#main_div{
+    width: 100%;
+    height: 100%;
+}
+#title_div{
+    width: 100%;
+    height: 140px;
+}
+.head_img{
+    width: 35px;
+    height: 35px;
+    background-color: rgba(128, 255, 0, 0.245);
+    border-radius: 100%;
+    margin-left: 5%;
+    float: left;
+    overflow: hidden;
+    padding: 0px;
+}.username_p{
+    width: 150px;
+    height: 35px;
+    float: left;
+    margin-left: 5px;
+    line-height: 35px;
+    font-size: 20px;
+    color: black;
+}
+.briefly_p{
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 5%;
+    color: black;
+}
+/*超链接样式*/
+
+a:hover{
+    font-weight: bold;
+}
+/*鼠标移点击时的样式*/
+a:active{
+    color: black;
+}
+/*
+    图片轮播样式设置
+    box：整个轮播系统的本体
+    arrow：箭头样式
+    left/right：左右箭头的位置及样式
+    imgclass：图片样式
+    imglist：图片序列样式，轮播主要功能
+    news_div：新闻标题
+*/
+#box{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+/*箭头样式设置*/
+.arrow{
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    width: 30px;
+    height: 45px;
+    line-height: 40px;
+    background: rgba(113, 111, 111, 0.318);
+    color: white;
+    z-index: 999;
+}
+.left{
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 0px;
+}
+.right{
+    position: absolute;
+    top: 45%;
+    left: 96%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 0px;
+}
+.imgclass{
+    width: 800px;
+}
+#imglist{
+    /*这个是装图片的盒子，要大一些才能让图片左浮动*/
+    width: 4000px;
+    position: absolute;
+}
+#imglist li{
+    margin-left: -3px;
+    display: block;
+    float:left;
+}
+.news_div{
+    width: 800px;
+    height: 100px;
+    display: block;
+    float: left;
+    margin-top: -250px;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0,0.8));
+    color: white;
+}
+.news_div h2{
+    margin-left: 20px;
+}
+.news_div p{
+    margin-left: 35px;
+}
+/*
+    主要内容排版
+    content_div：主体样式
+*/
+#content_div{
+    width: 100%;
+    
+}
+
+/*
+    推荐模块
+*/
+#like_ul li{
+    width: 100%;
+    height: 20%;
+    padding: 5px 0px;
+}
+#like_ul li:hover{
+    background-color: rgba(179, 175, 175, 0.512);
+}
+#like_div h2{
+    margin-bottom: 10px;
+}
+/*
+    趣闻趣事推送
+*/
+#news_div{
+    width: 100%;
+}
+#img_div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    float: right;
+    margin-top: -5%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#news_ul li{
+    padding: 10px 5px;
+}
+#news_ul li:hover{
+    background-color: rgba(179, 175, 175, 0.512);
+}
+#news_div h2{
+    margin-bottom: 10px;
+}
+
+/*用户简窗样式*/
+#user_div{
+    position:fixed;
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-radius: 12px;
+    background-color: rgb(254, 254, 254);
+    box-shadow: 0px 2px 3px rgba(77, 76, 76, 0.496);
+}
+#head_backgroundImg{
+    width: 100%;
+    height: 35%;
+    background-image: url("../images/user_test.jpg");
+    background-size:100%;
+    border-bottom: 1px rgba(0, 0, 0, 0.356) solid;
+}
+#head_backgroundImg p{
+    margin-top: 21%;
+    margin-left: 24%;
+    font-size: 20px;
+    color: white;
+}
+#user_headImg{
+    position:absolute;
+    margin-top: 20%;
+    margin-left: 5%;
+    width: 50px;
+    height: 50px;
+    border: 3px rgb(128, 126, 126) double;
+    border-radius: 100%;
+    background-color: aqua;
+}
+#user_body{
+    width: 100%;
+    height: 65%;
+}
+#user_body p{
+    margin-left: 24%;
+    font-size: 20px;
+}
