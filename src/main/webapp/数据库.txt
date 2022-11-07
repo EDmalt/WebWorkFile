@@ -1,7 +1,0 @@
-//用户表
-create table user(
-	u_mail_phone varchar(30) PRIMARY KEY not null,
-	u_name varchar(50) not null,
-	u_password varchar(200) not null,
-	u_headimg MEDIUMBLOB
-);
